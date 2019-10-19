@@ -1,5 +1,8 @@
-import test_submission
+import student_submission
 import copy
+import sys, os
+
+sys.stdout = open(os.devnull, "w")
 
 books = [
     "panda",
@@ -14,7 +17,7 @@ books = [
     "goldfish"
 ]
 
-student_result = test_submission.run(copy.deepcopy(books))
+student_result = student_submission.run(copy.deepcopy(books))
 
 scoring_result = books
 scoring_result.sort()
@@ -29,5 +32,8 @@ print(student_result)
 print("\nScoring Result:")
 print(scoring_result)
 
+sys.stdout = sys.__stdout__
 if(student_result == scoring_result):
     print("Victory!")
+else:
+    print("Defeat!")
