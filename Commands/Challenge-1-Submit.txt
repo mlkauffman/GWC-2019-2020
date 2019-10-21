@@ -1,0 +1,1 @@
+curl -F file=@${editor.current.file.path} 3.208.37.235:8080/challenge-1 -F Name="<Your Name Here>"
