@@ -40,7 +40,7 @@ def challenge_1():
             
     os.rmdir(folder_name)
     
-    client = boto3.client('dynamodb')
+    client = boto3.client('dynamodb', region_name='us-east-1')
     database_record = client.get_item(
         Key={"student": {"S": request.form['Name']}},
         TableName="Scores"
