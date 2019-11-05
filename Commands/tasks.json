@@ -1,0 +1,28 @@
+{
+    "tasks": [
+      {
+         "type": "che",
+         "label": "Get Code Updates",
+         "command": "cd GWC-2019-2020; git pull",
+         "target": {},
+         "previewUrl": "",
+         "problemMatcher": []
+      },
+      {
+         "type": "che",
+         "label": "Challenge 1 Submit",
+         "command": "curl -F file=@${file} 3.208.37.235:8080/challenge-1 -F Name=\"Your Name Here\"",
+         "target": {},
+         "previewUrl": "",
+         "problemMatcher": []
+      },
+      {
+         "type": "che",
+         "label": "Run",
+         "command": "cd GWC-2019-2020; pwd; python ${file}",
+         "target": {},
+         "previewUrl": "",
+         "problemMatcher": []
+      }
+   ]
+}
