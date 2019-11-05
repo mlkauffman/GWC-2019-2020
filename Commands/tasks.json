@@ -23,6 +23,14 @@
          "target": {},
          "previewUrl": "",
          "problemMatcher": []
+      },
+      {
+         "type": "che",
+         "label": "Reload Commands",
+         "command": "cp GWC-2019-2020/Commands/tasks.json .theia/tasks.json",
+         "target": {},
+         "previewUrl": "",
+         "problemMatcher": []
       }
    ]
 }
