@@ -1,7 +1,5 @@
 import copy
 
-test
-
 def run(books):
 
     """
