@@ -31,6 +31,14 @@
          "target": {},
          "previewUrl": "",
          "problemMatcher": []
+      },
+      {
+         "type": "che",
+         "label": "Challenge 1 Submit",
+         "command": "pip install urllib3 --user; python GWC-2019-2020/Commands/upload.py ${file} 3.208.37.235:8080/challenge-2 \"Your Name Here\"",
+         "target": {},
+         "previewUrl": "",
+         "problemMatcher": []
       }
    ]
 }
