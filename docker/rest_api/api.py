@@ -93,7 +93,7 @@ def challenge_1():
     return result
 
 @app.route('/challenge-2', methods=["POST"])
-def challenge_1():
+def challenge_2():
     if 'file' not in request.files:
         return "Error no file found"
     file = request.files['file']
