@@ -93,6 +93,16 @@ def update_board(game_info, player, option):
             stones = stones - 1
             continue
 
+    if opponent == False and board[x][0] == 1:
+        player_1_score = player_1_score + 1 + board[x][1]
+        board[x][0] = 0
+        board[x][1] = 0
+    
+    elif opponent == True and board[x][1] == 1:
+        player_1_score = player_1_score + 1 + board[x][0]
+        board[x][0] = 0
+        board[x][1] = 0
+    
     game_info[0] = board
     game_info[1] = player_1_score
     game_info[2] = player_2_score
